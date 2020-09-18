@@ -1,0 +1,174 @@
+/* Big Heading */
+
+.big-h {
+  font-size: 10rem;
+  font-weight: bolder;
+  color: black;
+}
+
+/* .ow {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  margin-bottom: 100px;
+} */
+
+.about-us {
+  text-align: justify;
+  margin-top: 100px;
+}
+
+.underline {
+  height: 2px;
+  width: 100px;
+  background-color: red;
+  margin-left: 430px;
+  margin-bottom: 20px;
+}
+
+/* Logo Image */
+
+.logo-img {
+  width: 500px;
+  height: 500px;
+}
+#overall {
+  background-color: white;
+}
+
+/* Container */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: none;
+  padding: 0px 20px;
+}
+
+.overview-container {
+  height: 100vh;
+  /* background-color: white; */
+}
+
+/* Buttons */
+
+.btn {
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+}
+
+.btn-sub {
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #eee;
+  background-color: #111;
+}
+
+/* Contact form */
+
+#contact-form .form-group {
+  margin-bottom: 5px;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+  margin-top: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+  border-radius: 10px;
+  background-color: #ddd;
+  /* margin-bottom: 50px; */
+}
+
+#contact-form textarea {
+  height: 100px;
+  margin-top: 40px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+}
+
+/* Platform highlights */
+
+.slide-heading {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: red;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.card {
+  opacity: 1 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover,
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  transform: scale(1.2);
+}
+
+.card-img {
+  margin-top: 8px;
+  height: 100px;
+  width: 100px;
+}
+
+.card-img img {
+  height: 100px;
+  width: 100px;
+}
+
+/* .card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 220px;
+  height: 600px;
+} */
+
+.card-1,
+.card-2,
+.card-3,
+.about-us {
+  background-color: #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-conatiner {
+  display: flex;
+  /* justify-content: space-between;
+  align-items: center;
+  flex-direction: row; */
+}

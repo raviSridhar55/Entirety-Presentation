@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<!--
+  This is a simple example / template impress.js slide show. The goal is to be
+  easier to read for a first timer than the official and very feature rich
+  demo by bartaz (http://bartaz.github.io/impress.js/). It's also a very
+  traditional presentation that looks like slides (square screens with bullet
+  points...), again to make a first timer feel more at home. From this simple
+  presentation you can then go on to more powerful impress.js presentations!
+  
+  This example is hopefully helpful for people that want to create both
+  simple and (eventually) awesome presentations in impress.js and comfortable
+  doing that directly in HTML.
+  
+  By: @henrikingo (Still based on the HTML from bartaz' demo.)  
+    
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Entirety.in</title>
+    <meta name="description" content="Explore impress.js in 3D" />
+    <meta name="author" content="Henrik Ingo" />
+    <link href="..\..\css\impress-common.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="css/3D-rotations.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="impress-not-supported">
+    <div class="fallback-message">
+      <p>
+        Your browser <b>doesn't support the features required</b> by impress.js,
+        so you are presented with a simplified version of this presentation.
+      </p>
+      <p>
+        For the best experience please use the latest <b>Chrome</b>,
+        <b>Safari</b> or <b>Firefox</b> browser.
+      </p>
+    </div>
+
+    <div id="impress" data-transition-duration="2000">
+      <div
+        id="overview"
+        class="step overview"
+        data-x="1350"
+        data-y="100"
+        data-z="100"
+        data-scale="3"
+        data-rotate-y="90"
+        style="
+          background: #fff;
+
+          width: 100vw;
+          font-family: 'Fredoka One', cursive;
+          opacity: 0.9;
+        "
+      >
+        <!-- <h1>Entirety</h1> -->
+        <div class="overview-container">
+          <!-- <p>
+            <img
+              src="./img/LOGO_ENTIRETY-removebg-preview.png"
+              alt="Logo"
+              class="logo-img"
+            />
+          </p> -->
+          <h1
+            class="big-h"
+            style="
+              margin: 170px 0;
+              text-transform: uppercase;
+              color: #ec3e3e;
+              opacity: 1;
+            "
+          >
+            Entirety
+          </h1>
+        </div>
+      </div>
+
+      <!-- <div
+        id="overview2"
+        class="step overview"
+        data-x="2018"
+        data-y="106"
+        data-z="3018"
+        data-scale="2"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          veritatis dolore sit expedita adipisci libero eveniet, facilis sequi,
+          similique, id temporibus deserunt autem est? Libero tempora quam porro
+          unde aperiam.
+        </p>
+
+         <p>
+          Unlike the <code>x/y/z</code> coordinates (aka translations), the
+          <code>rotate-x/y/z</code> rotations are applied in a specific order,
+          and order matters. This demo presentation exhibits the use of the new
+          <code>data-rotate- order</code> attribute. Instead of the default
+          "xyz" order, the steps use the reversed <em>"zyx"</em> order in
+          applying rotations around each axis. Some of the steps (<a
+            href="#step-3"
+            >3</a
+          >
+          &amp; <a href="#step-7">7</a>), are in positions that are not possible
+          with the default "xyz" order.
+        </p> 
+      </div> -->
+
+      <div
+        id="step-1"
+        class="step"
+        data-x="0"
+        data-y="0"
+        data-z="0"
+        data-goto-prev="step-8"
+      >
+        <h1 class="slide-heading">About us</h1>
+        <div class="underline"></div>
+        <div class="about-us">
+          <p style="text-align: justify; font-size: 2rem">
+            There’s a saying when one door closes another 1000 doors open we
+            entirety people guide you to use all these 1000 doors with providing
+            opportunities to your interests Not just In academics but from
+            physical to mental health, we improve the child’s efficiency through
+            our team programs.we check on the child's attention like even minute
+            things just like grains in the sand We are developing him from being
+            self-confident to self-dependent where he stands and can handle the
+            present competitive world.
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="step-2"
+        class="step"
+        data-x="420"
+        data-y="-70"
+        data-z="-250"
+        data-rotate-z="45"
+        data-rotate-y="-45"
+        data-rotate-order="zyx"
+      >
+        <h1 class="slide-heading">Platform Highlights</h1>
+        <div class="underline"></div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/career guidance.png"
+                alt="Career Guidance"
+              />
+            </div>
+            <div class="card-title">
+              <p>Career Guidance</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/language.jpg"
+                alt="Linguistic Coaching"
+              />
+            </div>
+            <div class="card-title">
+              <p>Linguistic Coaching</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/student profile.png"
+                alt="Student Profile"
+              />
+            </div>
+            <div class="card-title">
+              <p>Student Profile</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/online attendance.jpg"
+                alt="Online Attendance"
+              />
+            </div>
+            <div class="card-title">
+              <p>Online Attendance</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/online exam.jpg"
+                alt="Remote learning and online examinations"
+              />
+            </div>
+            <div class="card-title">
+              <p>Remote learning and online examinations</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/performance analyse.jpg"
+                alt="Career Guidance"
+              />
+            </div>
+            <div class="card-title">
+              <p>Performance analyser</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div
+        id="step-3"
+        class="step"
+        data-x="700"
+        data-y="350"
+        data-z="-350"
+        data-rotate-z="90"
+        data-rotate-y="-90"
+        data-rotate-order="zyx"
+      >
+        <p>Slide three</p>
+      </div> -->
+
+      <div
+        id="step-4"
+        class="step"
+        data-x="422"
+        data-y="780"
+        data-z="-250"
+        data-rotate-z="135"
+        data-rotate-y="-135"
+        data-rotate-order="zyx"
+      >
+        <h1 class="slide-heading">Platform Highlights</h1>
+        <div class="underline" style="margin-bottom: 0px"></div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/calender and todo.png"
+                alt="Academic calendar & To-Do Tasks
+                "
+              />
+            </div>
+            <div class="card-title">
+              <p>Academic calendar & To-Do Tasks</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/online admission.jpg"
+                alt="Career Guidance"
+              />
+            </div>
+            <div class="card-title">
+              <p>Online admissions and Fee payment portal</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/Engaging.jpg"
+                alt="Career Guidance"
+              />
+            </div>
+            <div class="card-title">
+              <p>Engage Portal for all</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="./img/Platform highlights/health analysis.jpg"
+                alt="Career Guidance"
+              />
+            </div>
+            <div class="card-title">
+              <p>Health analysis and transport monitor</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="./img/Platform highlights/personality.jpg"
+              alt="Career Guidance"
+            />
+          </div>
+          <div class="card-title">
+            <p>Personality development and motivational sessions</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="step-5"
+        class="step"
+        data-x="0"
+        data-y="702"
+        data-z="0"
+        data-rotate-z="180"
+        data-rotate-y="-180"
+        data-rotate-order="zyx"
+      >
+        <h1 class="slide-heading">Why Choose Us?</h1>
+        <div class="underline"></div>
+        <div class="card-container">
+          <div class="card-1">
+            <div class="h">
+              <h1>Student</h1>
+            </div>
+            <div class="cont">
+              <p>
+                > The over all educational goals and development. <br />
+                > Shaping mind and personality with proper guidance , limiting
+                confusions and bridging gaps. <br />
+                > Mental and spiritual growth and training
+              </p>
+            </div>
+          </div>
+          <div class="card-2">
+            <div class="h">
+              <h1>Parent</h1>
+            </div>
+            <div class="cont">
+              <p>
+                > Total involvement of parents in the future and education of
+                the child. <br />
+                > Carefree experience for parents, ensuring their children are
+                in good hands when it comes to education and future building.
+              </p>
+            </div>
+          </div>
+          <div class="card-3">
+            <div class="h">
+              <h1>School</h1>
+            </div>
+            <div class="cont">
+              <p>
+                > Schools get better and easier teaching and assessment method .
+                <br />
+                > Schools can monitor Health and wellbeing of students. <br />
+                > We provide councillor for path and carrier guidance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="step-6"
+        class="step"
+        data-x="379"
+        data-y="780"
+        data-z="270"
+        data-rotate-z="135"
+        data-rotate-y="-225"
+        data-rotate-order="zyx"
+      >
+        <h1>Introducing New AI as your friend</h1>
+        <div class="underline" style="margin-left: 455px"></div>
+        <div class="about-us">
+          <p style="font-size: 1.9rem; height: 400px">
+            We are developing an AI to interact and help students by assisting
+            them and even like being a friend with them in all the possible
+            ways. This AI will allow students to think innovatively and give
+            them thoughts in building their vocation and technology. With the
+            most advanced technology, operations are being made swift and
+            decisive.
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="step-7"
+        class="step"
+        data-x="700"
+        data-y="350"
+        data-z="350"
+        data-rotate-z="90"
+        data-rotate-y="-270"
+        data-rotate-order="zyx"
+        data-goto-next="step-1"
+      >
+        <h1>Contact us</h1>
+        <div class="underline" style="margin-left: 440px"></div>
+        <section id="contact-form" class="py-3">
+          <div class="container">
+            <form action="process.php">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-sub">Submit</button>
+            </form>
+          </div>
+        </section>
+
+        <div class="website">
+          <p>
+            Visit our website to know more
+            <a href="http://entiretyin.com/">Entirety.com</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- <div
+        id="step-8"
+        class="step"
+        data-x="379"
+        data-y="-70"
+        data-z="270"
+        data-rotate-z="45"
+        data-rotate-y="-315"
+        data-rotate-order="zyx"
+      ></div> -->
+    </div>
+
+    <div id="impress-toolbar"></div>
+    <div id="impress-help"></div>
+
+    <script type="text/javascript" src="../../js/impress.js"></script>
+    <script>
+      impress().init();
+    </script>
+  </body>
+</html>
